@@ -1,10 +1,9 @@
-# electron-template
+# twin-webpack-template
 
-This repository is a template for an electron app. Certain limitations with electron, and certain planned features did force my hand, but overall, the toolchain here uses more stable libraries as a result.
+Uses Webpack instead for more stability and certain features. Basically an updated version of the toolchain for a few of my projects as a template.
 
 ## Features
 
-- [Electron](https://www.electronjs.org)'s cross-platform build tools
 - [twin.macro](https://github.com/ben-rogerson/twin.macro) + [Emotion](https://emotion.sh) styling system
 - Decent [Webpack](https://webpack.js.org/) + [Babel](https://babeljs.io/) Configuration
 - [React Framework](https://reactjs.org/) with [Hot Module Reloading](https://webpack.js.org/concepts/hot-module-replacement/)
@@ -24,12 +23,6 @@ This repository is a template for an electron app. Certain limitations with elec
 
 ### Babel-specific
 
-- Use modern automatic `jsx` import system
+- Use new automatic `jsx` import system
 - Use `jsx-dev` plugin for better debugging experience
-- Integrated into `webpack.config.js`
-
-## Quirks
-
-- Currently Babel configuration for electron is messed up. Might need separate .babelrc and tsconfig.json for electron-side? Especially since types seem to be leaking in when electron is imported that is affecting the webapp types too.
-- browserslist in package.json is used by babel preset-env. bad because theoretically should have different js targets for chromium-based frontend and Node.js based backend.
-- One would consider electron-webpack or electron-builder... if one has noted it existed...
+- Integrated config into `webpack.config.js`
