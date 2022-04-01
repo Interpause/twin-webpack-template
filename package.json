@@ -1,7 +1,7 @@
 {
   "name": "twin-webpack-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "highly opinionated template",
   "author": "John-Henry Lim <hyphen@interpause.dev> (https://interpause.dev/)",
   "repository": "https://github.com/Interpause/twin-webpack-template.git",
